@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Edgeledger | home</title>
+</head>
+<body>
+    <header id="home">
+        <!-- navbar -->
+        <div id="navbar" class="navbar top">
+            <div class="logo">
+                <h1>Edge Ledger</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="btn">Home</a></li>
+                    <li><a href="#about" class="btn">About</a></li>
+                    <li><a href="#contact" class="btn">Contact</a></li>
+                    <li><a href="#sign-up" class="btn">Sign Up</a></li>
+                    <li><a href="#newsletter" class="btn">News Letter</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- showcase -->
+        <div id="showcase">
+            <h1>WELCOME TO OUR WEBSITE</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, odio?</p>
+        </div>
+    </header>
+    <section id="about" class="pages flex-page">
+        <div id="heading">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit repellendus deleniti illo molestiae explicabo odio mollitia placeat at nulla?</p>
+        </div>
+        <div class="column">
+            <div class="column1 column-flex">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora ipsum illo fugit non consectetur rem, sunt nobis reprehenderit aperiam?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eius voluptate. Maxime, provident incidunt vero soluta reprehenderit sequi doloribus distinctio reiciendis ipsa illo, impedit nisi deleniti optio temporibus nemo accusantium nulla corrupti perspiciatis doloremque porro nesciunt sed dolorem ducimus vel!</p>
+            </div>
+            <div class="column2 column-flexS">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tempora ipsum illo fugit non consectetur rem, sunt nobis reprehenderit aperiam?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, eius voluptate. Maxime, provident incidunt vero soluta reprehenderit sequi doloribus distinctio reiciendis ipsa illo, impedit nisi deleniti optio temporibus nemo accusantium nulla corrupti perspiciatis doloremque porro nesciunt sed dolorem ducimus vel!</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- jquery for smooth effect -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+            navbar.classList.remove('top');
+            if (!scrolled) {
+                navbar.style.transform = 'translateY(-70px)';
+            }
+            setTimeout(function () {
+                navbar.style.transform = 'translateY(0)';
+                scrolled = true;
+            }, 200);
+            } else {
+            navbar.classList.add('top');
+            scrolled = false;
+            }
+        };
+        //smooth scrolling 
+        $('.btn').on('click',function(event){
+            if(this.hash !==''){
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top-70,
+                    },
+                    800
+                );
+            }
+        });
+        
+    </script>
+    
+</body>
+</html>
