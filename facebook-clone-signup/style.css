@@ -1,0 +1,33 @@
+#header{
+    background-color:#fffbe2;
+    border-bottom: #e2c822 1px solid;
+    margin:0;
+    padding:0;
+
+}
+#header .main-head h2{
+    color:#3b5998;
+    font-size: 17px;
+    font-weight:lighter;
+    padding:5px;
+    margin:0;
+    
+
+}
+#header p{
+    color:#7f7212;
+    padding:5px
+}
+
+.logo{
+    color:#165df5;
+    cursor: pointer;
+    padding-top:20px;
+    padding-bottom:10px;
+    font-size: 25px;
+    
+}
+
+#content{
+    padding:30px
+}
