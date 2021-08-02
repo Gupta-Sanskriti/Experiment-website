@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: rgb(243, 238, 231);
+    ;
+    line-height: 1.5em;
+    padding:0;
+    letter-spacing: 1px;
+    
+    
+}
+
+/* global scope */
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.button_1{
+    background-color: rgb(243, 94, 40);
+    border:2px rgb(243, 94, 40) solid;
+    padding:10px 20px;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.button_1:hover{
+    background-color:rgb(235, 116, 72);
+    color:white ;
+    font-weight: bold;
+}
+
+/* header */
+header{
+    background-color: #1d2431;
+    color:white;
+    padding:30px;
+    min-height: 70px;
+    border-bottom:3px solid rgb(243, 94, 40);
+    
+
+}
+
+header #branding{
+    float:left;
+    padding:10px
+}
+
+header .highlight{
+    color:rgb(243, 94, 40);
+}
+
+header nav{
+    float:right;
+    padding-top: 10px;
+}
+
+
+header nav ul li{
+    display: inline;
+    color:white;
+    font-size:20px;
+    padding:30px;
+    
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding:10px 10px
+}
+
+header .current{
+    color:rgb(243, 94, 40);
+}
+
+nav a:hover{
+    background:#222b3b;
+    padding:10px;
+    border-radius: 30px;
+}
+
+
+/* showcase */
+#showcase{
+    background-image:url('../images/ash-edmonds-0aWZdK8nK2I-unsplash.jpg');
+    background-repeat:no-repeat;
+    width: 100%;
+    height:400px;
+    background-position: center center;
+    background-size:cover;
+    text-align: center ;
+    padding: 30px;
+    font-size: 20px;
+    border-bottom: rgb(243, 94, 40) 3px solid;
+    
+
+}
+
+#showcase h1{
+    color:white;
+    font-weight: 200;
+    font-size:40px;
+    margin:0px;
+    padding-top:100px;
+    
+    
+
+} 
+
+#showcase p{
+    color:white;
+    padding:40px;
+    margin:10px;
+    line-height: 1.6em;
+}
+
+/* newsletter */
+#newsletter{
+    background-color: #1d2431;
+    padding:30px;
+    color:white;
+    word-spacing: 10px;
+    border-bottom: 3px rgb(243, 94, 40) solid;
+}
+
+#newsletter h1{
+    float:left;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding:5px;
+}
+
+#newsletter form{
+    float:right;
+}
+
+#newsletter form input{
+    padding:10px 20px;
+    border-radius: 30px;
+    width:300px;
+
+}
+
+
+
+/* content */
+#boxes{
+    display: inline;
+    margin:auto;
+    padding:auto;
+    font-weight: 100;
+}
+
+#boxes .box{
+    float:left;
+    text-align:center;
+    width:33%;
+    padding:30px;
+    margin:30px 0;
+    
+    border-radius:500px;
+
+}
+#boxes .box img{
+    width:100px;
+    height:auto;
+    border-radius: 15px;
+}
+
+#boxes .box h1,p,img{
+    padding-bottom:10px;
+}
+
+/* footer */
+
+footer{
+    background:rgb(243, 94, 40);
+    text-align:center;
+    padding:20px;
+    color:white;
+
+}
+footer p{
+    padding:10px;
+}
+
+
+/* about styling: */
+#main{
+    /* display:inline; */
+    margin: auto;
+}
+#main-col{
+    width:60%;
+    margin:10px;
+    padding:20px;
+    text-align: justify;
+}
+
+#main .dark{
+    background-color: #1d2431;
+    color:white;
+    padding:10px;
+    position:relative;
+}
+
+#main h1{
+    padding:10px;
+}
+
+
+#sidebar {
+    width:38%;
+    float: right;
+    height:auto;
+    position:absolute;
+    top:250px;
+    left:60%;
+    
+}
+
+/* services */
+
+#services li {
+    border: #1d2431 solid 2px;
+    padding:10px;
+    margin:10px;
+    list-style: none;
+    background-color: #414957;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+#services li h3{
+    padding:10px;
+}
+
+/* sidebar */
+#sidebar{
+    border-radius:20px;
+}
+.dark{
+    border-radius: 20px;
+    padding:20px;
+}
+#sidebar form label{
+    display: block;
+    padding: 5px;
+    
+}
+
+#sidebar form input,textarea{
+    width:80%;
+    padding:10px;
+    border-radius:20px;
+    background-color: rgba(202, 192, 185, 0.384);
+    border:none;
+    color:#ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
