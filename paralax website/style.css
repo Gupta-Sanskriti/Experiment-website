@@ -1,0 +1,91 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height:1.4;
+    font-weight: 400;
+    font-size: 16px;
+    height: 100%;
+    color:#666;
+    height:100%;
+    
+}
+
+/* utilities */
+
+
+.bg-primary{
+    background:#eee;
+    color:rgb(61, 61, 61);
+}
+
+.bg-dark{
+    background:rgb(61, 61, 61);
+    color:#eee;
+}
+
+/* text */
+.text{
+    text-align: center;
+    padding:2rem
+}
+
+.text h1{
+    padding-bottom: 1rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+
+    
+}
+
+.pimg1{
+    background: url("./imgs/pexels-burst-374870.jpg")no-repeat center center/cover;
+    min-height:100vh;
+}
+
+.pimg2{
+    background:url("./imgs/pexels-quintin-gellar-313782.jpg")no-repeat center center/cover;
+    min-height: 400px;
+}
+
+.pimg3{
+    background:url("./imgs/pexels-burst-374870.jpg")no-repeat center center/cover;
+    min-height: 400px;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+
+    /* to make the background image fixed */
+    background-attachment: fixed;
+}
+
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    color:#000;
+    font-size:17px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+}
+
+.ptext .border.trans{
+    background:transparent;
+}
+
+@media (max-width:567px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment:scroll;
+    }
+}
