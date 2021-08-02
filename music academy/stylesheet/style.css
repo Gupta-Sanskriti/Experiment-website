@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration:none;
+    line-height: 1.4em;
+}
+/* utility */
+html,body{
+    font-family: 'barlow', sans-serif;
+    color: white;
+}
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.btn:hover{
+    background-color: cornflowerblue;
+}
+
+.btn-dark{
+    background:rgba(36, 102, 139, 0.623);
+    padding:20px;
+    color:white;
+    border-radius:10px;
+    margin:50px;
+    font-size:20px;
+
+}
+.text-primary{
+    color: rgb(35, 132, 189);
+}
+.clr{
+    clear:both;
+    padding-bottom:30px;
+}
+
+/* navbar */
+header{
+    background:url('/pexels-snapwire-6966\(1\).jpg')no-repeat center bottom/cover;
+    height:35em;
+    color:white;
+    /* width:100%; */
+    
+}
+
+#navbar h1 a{
+    float:left; 
+    overflow:hidden;
+    padding:20px; 
+    background:#000;
+    color:white;
+    border-bottom-left-radius: 10px;
+}
+#navbar h1 a:hover{
+    padding:20px;
+    background:#333;
+    color:white;
+}
+
+#navbar ul{
+    float:right;
+}
+
+#navbar ul li{
+    float:left;
+    padding:20px;
+}
+
+#navbar ul li a{
+   padding:20px;
+   color:black;
+   font-size:1.3em;
+   font-weight:600; 
+}
+
+#navbar ul li a:hover{
+    padding:20px;
+    color:white;
+    background:#333;
+}
+
+/* showcase */
+#showcase{
+    padding:10em;
+    text-align:center;
+    
+}
+
+#showcase .main-heading{
+    font-size:3em;
+    font-weight:700;
+    padding:50px;
+}
+
+/* about */
+
+#about{
+    color:black;
+    width:1200px;
+    margin:auto;
+    padding:50px;
+}
+#about .about-image{
+    width:30%;
+    float:left;
+    
+}
+#about .about-image img{
+    border-bottom-right-radius:20% ;
+    border-top-left-radius:20% ;
+    border-top:solid #333 5px;
+    
+}
+
+#about .about-info{
+    width: 60%;
+    float:right;
+    margin:40px;
+}
+
+#about .about-info h1{
+    font-size: 30px;
+    font-weight: bolder;
+    margin:30px;
+}
+
+#about .about-info p{
+    font-size:20px;
+}
+
+/* services */
+#services {
+    background: rgba(143, 143, 143, 0.363);
+    width: 100%;
+    height: 800px;
+}
+
+#services .service-info{
+    width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+#services .service-info h1{
+    text-align:center;
+    font-size:3em;
+    font-weight: bolder;
+    padding:20px 0 40px 0;
+}
+
+#services .service-info .main-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+}
+
+#services .service-info .main-box .box{
+    padding:1rem;
+    color:#000;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#services .service-info .main-box .box>img{
+    border-radius:5px;
+    margin-bottom:5px;
+}
+
+
+
+/* sign-up-and-text */
+#sign-up-and-text{
+    color:black;
+    padding:40px;
+}
+
+#sign-up-and-text #sign-up{
+    width:50%;
+    margin:auto;
+    float:left;
+    background:#333;
+    padding:30px;
+    margin-top:50px;
+    border-radius: 20px;;
+    
+}
+#sign-up-and-text #sign-up h1{
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+#sign-up-and-text #sign-up p{
+    color:white;
+    font-size:20px;
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+#sign-up-and-text #sign-up form{
+    background:white;
+    border-radius: 20px;
+    padding:20px 30px;
+}
+#sign-up-and-text #sign-up form label{
+    display:block;
+    font-size:20px;
+    padding-bottom:10px;
+}
+
+#sign-up-and-text #sign-up form input{
+    display: block;
+    width:100%;
+    margin-bottom:20px;
+    border-radius:5px;
+    padding:10px;
+    border:0.2px #333 solid;
+}
+.button {
+    margin:10px;
+    padding:5px 10px;
+    font-size:20px;
+    background:rgba(35, 132, 189, 0.623);
+    color:white;
+    border:none;
+
+}
+
+#sign-up-and-text #text{
+    width:45%;
+    margin:auto;
+    float:right;
+    padding:10%;
+    
+}
+
+#sign-up-and-text #text p{
+    padding-bottom:20px;
+    margin-top:0;
+}
+#sign-up-and-text #text .dark{
+    color:rgb(30, 45, 187);
+    font-size: 25px;
+    margin-top:50px;
+    
+    padding:10px;
+    line-height: 1.3em;
+    border-bottom-left-radius: 20px;
+    background:#f4f4f4;
+    text-align:center;
+}
+/* footer */
+
+#main_footer {
+    background:url('../img/maxence-pira-A7-MijhBivc-unsplash.jpg')no-repeat center center/cover;
+    color:#ffffff;
+    font-size:20px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0.8;
+    font-weight: bold;
+    
+}
+#main_footer .company_news{
+    margin:30px ;
+}
+
+#main_footer .main_body{
+    width: 90%;
+    margin:auto;
+    padding:10px;
+
+}
+
+#main_footer .main_body .foot_box{
+    float:right;
+    width:33.3%;
+    padding:30px 20px;
+    margin:auto;
+    text-align: left;
+      
+}
+
+#main_footer .main_body .foot_box h2{
+    margin: 10px 0;
+}
+
+#main_footer #bottom_foot{
+    min-width:800px;
+    margin:auto;
+    padding:20px;
+    background:rgb(0, 0, 0);
+    border-top-right-radius: 100%;
+    border-top-left-radius:100%;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
